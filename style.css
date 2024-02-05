@@ -6,12 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.wrapper{
-     height: 100vh;
-     overflow-y: auto;
-     overflow-x: hidden;
 
-}
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -73,12 +68,6 @@
     transition: all .5s;
     
 }
- /* .content-section{
-    display: grid;
-    background-color: yellow;
-    border: #cd1818;
-    grid-template-columns: repeat(3,1fr);
- } */
 
 .content-section{
      display:flex;
@@ -88,6 +77,7 @@
 }
 .card{
     margin: 0 auto;
+    position: relative;
     border-radius: 12px;
     display: flex;
     flex-basis: 31%;
@@ -96,8 +86,9 @@
     padding: 10px;
     height: 10rem;
     /* background:linear-gradient(to left,#8000FF, #DE00FF); */
-    background-color: rgb(123, 127, 255);
-    box-shadow: 0 5px 5px #a2a4a3;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 5px 5px #63716a;
+    
 }
 .card:hover{
     transform: scale(1.04);
@@ -105,7 +96,7 @@
 } 
 .card-h{
     user-select: none;
-    color: white;
+    color: rgb(48, 35, 225);
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -117,3 +108,39 @@
     font-family: 'Oswald', sans-serif;
      text-align: center;
 }
+
+
+.card {
+    background: url(gradient-color-image.jpg);
+    background-color: rgba(98, 255, 7, 0.5); /* Semi-transparent white */
+    background-blend-mode: lighten; /* Or other blend modes for different effects */
+  }
+
+  @media   (max-width: 600px) {
+    .container{
+        width:400px;
+    }
+     .content-section{
+       display: flex;
+     } 
+     .content-section div{
+       width: 380px;
+     }
+     .head-desc btm{
+        margin-left: 400px;
+     }
+  }
+  @media  (min-width: 601px)  and (max-width: 900px) {
+    .container{
+        width:700px;
+    }
+     .content-section{
+       display: flex;
+     } 
+     .content-section div{
+       width: 320px;
+     }
+     .head-desc btm{
+        margin-left: 400px;
+     }
+  }
